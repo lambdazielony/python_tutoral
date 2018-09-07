@@ -12,4 +12,5 @@ d = {'hello':2, 'darkness':3, 'my':5, 'old':6, 'friend':8}
 
 print(x, i[0])
 
+
 print(d['hello'], d['darkness'], d['my'], d['old'], d['friend'])
