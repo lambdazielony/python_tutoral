@@ -20,8 +20,8 @@ c = 22
 print(d['hello'], d['darkness'], d['my'], d['old'], d['friend'])
 
 
-if a>b:
+if a<b:
 	print('a is greater than b')
 	print('and this is not a joke')
 
-print('a i thik this should appear everytime')
+print('and i think this should appear everytime')
