@@ -23,5 +23,5 @@ print(d['hello'], d['darkness'], d['my'], d['old'], d['friend'])
 if a<b:
 	print('a is greater than b')
 	print('and this is not a joke')
-
-print('and i think this should appear everytime')
+for x in range(0, 10):
+	print('and i think this should appear everytime')
