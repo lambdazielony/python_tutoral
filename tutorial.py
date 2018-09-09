@@ -1,27 +1,29 @@
-x = 'this it my city'
+from graphics import *
 
-print('hello, world')
-print('My name is Sebastian')
-print(x)
+class Ball:
+	def __init__(self, startx, starty, radius):
+		self.x = startx
+		self.y = starty
+		self.r = radius
+	def setX(self, xx):
+		self.x = xx
 
-x = "this is not my city"
-i = ['this', 'is' 'not', 'my', 'city']
+win = GraphWin("Ball", 800, 600)
+win.setBackground('black')
 
-d = {'hello':2, 'darkness':3, 'my':5, 'old':6, 'friend':8}
+bal = Ball(100, 100, 20)
+i = 0;
 
+while True:
+	
+	circle = Circle(Point(bal.x, bal.y), bal.r)
+	circle.setFill('yellow')
 
-print(x, i[0])
+	bal.setX(i)
+	i+=1
 
-a = 5
-b = 4
-c = 22
+	circle.draw(win)
 
+	win.getMouse()	
+	win.close()
 
-print(d['hello'], d['darkness'], d['my'], d['old'], d['friend'])
-
-
-if a<b:
-	print('a is greater than b')
-	print('and this is not a joke')
-for x in range(0, 10):
-	print('and i think this should appear everytime')
